@@ -1,0 +1,26 @@
+/* CTRL + ~ to crate a comment*/
+/* css rule is the selector and declaration block*/
+h1,h2{ 
+    color: blue;
+}
+/* h1 is the selector */
+/* between {] is the declaration block */
+/* color is the property */
+/* blue is the value */
+/* declaration is the property + value */
+/* ; is important */
+/* group selectors by adding a , */
+
+#grandmaria{
+    color: rgba(0, 0, 0, 0.5);
+    /* last value in rgba is transparency */
+    background: chartreuse;
+}
+/* add an id to p tag for this to work, dont reuse ids, in the case you have to repeat use class in html and . instead of # in css, you can combine them */
+
+div{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* use div (for lines) and span (inline) for grouping things, you can combine div and classes*/
+
