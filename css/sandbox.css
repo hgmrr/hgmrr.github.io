@@ -1,7 +1,8 @@
 /* CTRL + ~ to crate a comment*/
 /* css rule is the selector and declaration block*/
-h1,h2{ 
-    color: blue;
+h1,
+h2 {
+  color: blue;
 }
 /* h1 is the selector */
 /* between {] is the declaration block */
@@ -11,16 +12,71 @@ h1,h2{
 /* ; is important */
 /* group selectors by adding a , */
 
-#grandmaria{
-    color: rgba(0, 0, 0, 0.5);
-    /* last value in rgba is transparency */
-    background: chartreuse;
+#grandmaria {
+  color: rgba(0, 0, 0, 0.5);
+  /* last value in rgba is transparency */
+  background: chartreuse;
 }
 /* add an id to p tag for this to work, dont reuse ids, in the case you have to repeat use class in html and . instead of # in css, you can combine them */
 
-div{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+div {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* use div (for lines) and span (inline) for grouping things, you can combine div and classes*/
 
+/* Default Display Property
+Block: Always starts a new line and takes full width
+Inline: dones not start new line and only takes up as much content space as needed 
+you can change this with display property
+inine elements don't respect top bottom propertys tho*/
+
+.block {
+  background: chartreuse;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.inline {
+  background: red;
+  color: white;
+  display: block;
+}
+
+.big-img,
+.small-img,
+.folder-img {
+  height: 200px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.big-img {
+  background: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.small-img {
+  background: url("../images/walp2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+.folder-img {
+  background: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
